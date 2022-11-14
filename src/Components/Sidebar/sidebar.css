@@ -5,6 +5,7 @@
     --first-color: #0D28A6;
     --first-color-alt: #f582a7;
     --white-color: white;
+    --homepage-color :#CFD4ED;
   }
   
   * {
@@ -29,6 +30,19 @@
     font-family: 'Nunito Sans', sans-serif;
     transition: 0.5s;
     border: solid 2px;
+  }
+  .logo-home-sidebar{
+    background-color: var(--first-color-alt);
+  }
+  .Homepage-btn-short{
+    background-color: var(--homepage-color);
+    height: 30px;
+    width: 30px;
+  }
+  .Homepage-btn-long{
+    background-color: var(--homepage-color);
+    height: 30px;
+    width: 90px;
   }
   
   .header {

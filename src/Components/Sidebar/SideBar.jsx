@@ -2,6 +2,7 @@ import React , {useState} from 'react'
 import './sidebar.css'
 import { Link } from 'react-router-dom'
 import {Row, Col, Form, Button} from 'react-bootstrap'
+import Dashboard from '../../Pages/Dashboard/Dashboard'
 
 
 
@@ -32,8 +33,10 @@ const SideBar = () => {
             <nav className="nav">
                 <div>
                     <Link to='/' className="nav-logo">
-                        <i className="fas fa-home-alt nav-logo-icon"></i>
-                        <span className="nav-logo-name">Homepage</span>
+                        <div className='Homepage-btn-short'></div>
+                        {/* <i className="fas fa-home-alt nav-logo-icon"></i> */}
+                        {/* <span className="nav-logo-name">Homepage</span> */}
+                        <div className="Homepage-btn-long"></div>
                     </Link>
 
                     <div className="nav-list">
@@ -49,7 +52,7 @@ const SideBar = () => {
                 </div>
             </nav>
         </aside>
-        <h1>Content</h1>
+        <h1>content</h1>
     </main>
   )
 }

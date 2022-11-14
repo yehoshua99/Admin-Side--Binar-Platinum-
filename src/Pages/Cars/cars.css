@@ -1,4 +1,15 @@
 .cars{
-    background-color: tomato;
-    padding-left: 150px;
+    background-color: rgb(224, 230, 231);
+    padding-left: 250px;
+    border: solid 2px;
+    height: 100vh;
+    
+}
+.cars-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 900px;
+    margin-top: 10px !important;
+    gap: 10px;
 }

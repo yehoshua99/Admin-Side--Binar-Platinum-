@@ -9,14 +9,27 @@ const Cars = () => {
 
   const [datacar, setDataCar] = useState([])
 
-  const loadDataCar = () => {
-    axios.get('http://localhost:3500/users')
-    .then((res) => {
-      setDataCar(res.data)
-      // console.log(datacar)
+  const [name, setName] = useState()
+  const [price, setPrice] = useState()
+  const [category, setCategory] = useState()
+  const [updateAT, setUpdateAT] = useState()
+
+  const loadDataCar = async () => {
+    try{
+      await axios.get('https://bootcamp-rent-cars.herokuapp.com/admin/v2/car')
+      .then((respons) => {
+        console.log(respons)
+        
+      }).catch(err => console.log(err.message))
+    }
+    try {
+    
+    } catch (error) {
       
-    })
+    }
+  
   }
+
   useEffect(() => {
     loadDataCar([])
   })
